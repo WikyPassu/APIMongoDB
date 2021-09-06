@@ -1,5 +1,5 @@
 <hr>
-<h1>❤ Aprendizaje de manejo de APIs ❤</h1>
+<h1>❤ Aprendizaje: manejo de APIs ❤</h1>
 <p>• Se utilizará éste repositorio con un proyecto funcional con la finalidad de explicar su funcionamiento para lograr la creación de una API propia.</p>
 <hr>
 <h2> 🐾 Primeros pasos 🐾</h2>
