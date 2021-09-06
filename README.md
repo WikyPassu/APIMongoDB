@@ -1,10 +1,12 @@
-<h1>❤ Aprendizaje de manejo de APIs ❤</h1>>
+<hr>
+<h1>❤ Aprendizaje de manejo de APIs ❤</h1>
 <p>• Se utilizará éste repositorio con un proyecto funcional con la finalidad de explicar su funcionamiento para lograr la creación de una API propia.</p>
 <hr>
 <h2> ❤ Primeros pasos ❤</h2>
 <p>➤ Instalar dependencias con el comando npm install</p>
 <p>➤ Configurar string de conexión a cluster</p>
 <p>➤ Correr con el comando npm start</p>
+<hr>
 <h2>🦴 Contexto 🦴</h2>
 <p>➤ Se desarrolló la primera versión de una API para el pet shop Pupyness Pet Caring que realiza las siguientes funcionalidades:</p>
 <p>• Ingreso de un perrito</p>
