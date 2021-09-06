@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const db = require('./models/db');
 
-// Init DB
+//Nos conectamos a la base de datos de MongoDB
 db.connect((err) => {
     if (err) {
         console.log(err);
@@ -14,24 +14,24 @@ db.connect((err) => {
     console.log('MongoDB Conectado');
 })
 
-// Cors config
+//Configuracion de cors
 const corsOptions = {
     origin: "*"
 };
 
-// Init express app
+//Iniciamos express
 const app = express();
 
-// Middleware for logged requests in console
+//Middleware para solicitudes registradas en la consola
 app.use(morgan('tiny'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors(corsOptions));
 
-// Routes
-app.use('/', require('./routes/index'));
-app.use('/perrito', require('./routes/perrito'));
+//Rutas - Se puede crear cualquier cantidad, en este ejemplo esta el index y perrito
+app.use('/', require('./routes/index')); //Ruta principal, solo tiene un mensaje
+app.use('/perrito', require('./routes/perrito')); //Ruta sobre la cual se haran las consultas
 
-// Port
+//Puerto que se abrira y estara ocupado por la app
 const port = process.env.PORT || 8080;
 app.listen(port, () => console.log(`App activa en el puerto ${port}`));

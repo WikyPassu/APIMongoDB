@@ -1,6 +1,6 @@
 const db = require("../models/db");
 
-//Esta es la estructura normal de un perrito en la coleccion perritos
+//Esta es la estructura normal de un documento perrito en la coleccion perritos. Hardcodeamos un objeto perrito para probar las consultas basicas
 let perrito = {
    idPerrito: 1000,
    nombre: "Lobo",
@@ -29,11 +29,17 @@ let perrito = {
    }
 };
 
+/**
+ * Utilizamos las mismas sentencias que cuando trabajamos en la consola de mongo: aggregate, find, insertOne, updateOne, deleteOne, etc.
+ * Las primeras consultas corresponden a consultas con datos hardcodeados, las versiones genericas donde se reciben parametros por request.body estan mas abajo y comentadas (las pueden testear con Postman)
+ * Hicimos esto a fin de que se entienda como esta estructurada la api, los primeros pasos por asi decir
+*/
+
 //Traer un perrito
 exports.traerUnPerrito = (req, res) => {
    db.getInstance().collection("perritos").aggregate([
       {
-         $project: { 
+         $project: { //Mostramos solo nombre, raza y nombre del dueño de un perrito con $project
             perrito: {
                nombre: "$nombre",
                raza: "$raza",
@@ -42,7 +48,7 @@ exports.traerUnPerrito = (req, res) => {
          }
       },
       {
-         $limit: 1
+         $limit: 1 //Que solo nos traiga un documento
       }
    ]).toArray() //Importante! Aggregate devuelve array, sino no podremos usar then y catch
    .then((data) => {
@@ -53,10 +59,10 @@ exports.traerUnPerrito = (req, res) => {
          }
       );
    })
-   .catch((err) => {
+   .catch((err) => { //Si todo sale mal, respondo codigo 500 y un mensaje de error
       res.status(500).send(
          {
-            error: "Ocurrio un error al insertar documento",
+            error: "Ocurrio un error al traer documento",
             resMongoDB: err
          }
       ); 
@@ -65,7 +71,7 @@ exports.traerUnPerrito = (req, res) => {
 
 //Insertar un perrito (hardcodeado)
 exports.insertarPerrito = (req, res) => {
-   db.getInstance().collection("perritos").insertOne(perrito)
+   db.getInstance().collection("perritos").insertOne(perrito) //Inserto el objeto perrito hardcodeado
    .then((data) => { //Si todo salio bien, respondo codigo 200 y un mensaje de exito + el perrito insertado. Tambien es posible que de 200, pero que no se haya insertado nada, para eso se muestra el data
       res.status(200).send(
          {
@@ -89,10 +95,10 @@ exports.insertarPerrito = (req, res) => {
 exports.modificarPerrito = (req, res) => {
    db.getInstance().collection("perritos").updateOne(
       {
-         idPerrito: 1000
+         idPerrito: 1000 //Voy a modificar al perrito que cumple con que su campo idPerrito sea 1000
       }, 
       {
-         $set: {
+         $set: { //Con $set modificamos los campos nombre y duenio.nombre
             nombre: "Lola",
             "duenio.nombre": "Alan"
          }
@@ -120,7 +126,7 @@ exports.modificarPerrito = (req, res) => {
 exports.eliminarPerrito = (req, res) => {
    db.getInstance().collection("perritos").deleteOne(
       {
-         idPerrito: 1000
+         idPerrito: 1000 //Voy a eliminar al perrito que cumple con que su campo idPerrito sea 1000
       }
    )
    .then((data) => { //Si todo salio bien, respondo codigo 200 y un mensaje exito. Tambien es posible que de 200, pero que no se haya eliminado nada, para eso se muestra el data
