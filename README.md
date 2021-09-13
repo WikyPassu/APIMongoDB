@@ -67,7 +67,7 @@ Es importante que creen un repositorio para el BACKEND y otro para el FRONTEND (
 <p>• Lo primero que tenemos que hacer es abrir esta carpeta con el Visual Studio Code.</p>
 <p>• Luego abriremos una nueva terminal.</p>
 <img src="images/2.backyfront/1.jpg">
-<p>Ahora vamos a instalar las dependencias de este proyecto, para eso escribiremos:</p>
+<p>• Ahora vamos a instalar las dependencias de este proyecto, para eso escribiremos:</p>
 <p><b>npm install</b></p>
 <p>• La estructura del BACKEND deberia verse asi:</p>
 <img src="images/2.backyfront/2.jpg">
