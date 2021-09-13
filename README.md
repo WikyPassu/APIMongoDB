@@ -32,4 +32,4 @@
 Es importante que creen un repositorio para el BACKEND y otro para el FRONTEND (subiremos ambos a heroku, pero separados).</p>
 <h3>➤ 2. Registrarnos en MongoDB Atlas, crear y configurar la base de datos.</h3>
 <p>Primero entramos a https://www.mongodb.com/es/cloud/atlas y le damos al boton Start free.</p>
-<img src="http://prnt.sc/1s32uld">
+<img src="http://prnt.sc/1s32uld" width="200px">
