@@ -98,3 +98,4 @@ Es importante que creen un repositorio para el BACKEND y otro para el FRONTEND (
 <p>Si quisieramos tambien correr localmente nuestro frontend, desde Visual abrimos una terminal y escribimos:</p>
 <p><b>ng start</b></p>
 <p>En el puerto especificado estara disponible nuestro front para ser testeado (recordar cambiar en las peticiones del app.component.ts que le vamos a pegar al localhost!!!).</p>
+<hr>
