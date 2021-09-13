@@ -27,9 +27,9 @@
 <p>➤ Mostrar todos los trucos que sabe hacer el perro Lobo y los niveles correspondientes.</p>
 <hr>
 <h2> 🐾 Primeros pasos 🐾</h2>
-<h3>1. Descargar todo el repositorio.</h3>
+<h3>➤ 1. Descargar todo el repositorio.</h3>
 <p>Separar las carpetas BACKEND y FRONTEND (en el back trabajaremos con mongo y nodejs, en el front con angular).
 Es importante que creen un repositorio para el BACKEND y otro para el FRONTEND (subiremos ambos a heroku, pero separados).</p>
-<h3>2. Registrarnos en MongoDB Atlas, crear y configurar la base de datos.</h3>
+<h3>➤ 2. Registrarnos en MongoDB Atlas, crear y configurar la base de datos.</h3>
 <p>Primero entramos a https://www.mongodb.com/es/cloud/atlas y le damos al boton Start free.</p>
 <img src="http://prnt.sc/1s32uld">
