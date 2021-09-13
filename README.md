@@ -82,7 +82,7 @@ Es importante que creen un repositorio para el BACKEND y otro para el FRONTEND (
 <p>Este frontend esta hecho en Angular, por lo tanto, lo ideal es instalarlo: https://angular.io/</p>
 <p>Abrimos esta carpeta con Visual Studio Code. Instalamos las dependencias como lo hicimos antes, abriendo una terminal y escribiendo:</p>
 <p><b>npm install</b></p>
-<p>La estructura del BACKEND deberia verse asi:</p>
+<p>La estructura del BACKEND debería verse asi:</p>
 <img src="images/2.backyfront/4.jpg">
 <p>Las carpetas y archivos que mas nos interesan son:</p>
 <img src="images/2.backyfront/5.jpg">
@@ -91,11 +91,11 @@ Es importante que creen un repositorio para el BACKEND y otro para el FRONTEND (
 <p><b>src/app/app.component.ts (Aqui estara la logica necesaria para mostrar en pantalla las opciones que queramos y la funcion que realizara la peticion a nuestro BACKEND).</b></p>
 <p>Aca tambien esta todo comentado para que se entienda cada cosa y como es que podemos hacer peticiones desde un FRONT a un BACK.</p>
 <h3>➤ 5. Subir BACKEND y FRONTEND a Heroku.</h3>
-<p>Les dejamos este repositorio donde se explica en el paso 3 de ahi como subir una aplicacion a heroku, basicamente tendran que hacer esto tanto para el front como para el back: https://github.com/flippiJS/nodejs-mongodb-heroku</p>
-<p>Obviamente podriamos correr esta api localmente, el string de conexion quedaria conectado a nuestro Cluster, pero en lugar de usar heroku, bastaria con abrir la terminal con el BACKEND en Visual y escribir:</p>
+<p>Les dejaremos este repositorio donde se explica en el paso 3 cómo subir una aplicacion a heroku, deberan hacer esto tanto para el front como para el back: https://github.com/flippiJS/nodejs-mongodb-heroku</p>
+<p>Obviamente podríamos correr ésta API localmente. Para ello, el string de conexión quedaría conectado a nuestro Cluster, pero en lugar de usar heroku, basta con abrir el terminal con el BACKEND en Visual y escribir el siguiente comando:</p>
 <p><b>npm start</b></p>
-<p>Nuestra api estara disponible en el puerto especificado en el proyecto. Desde nuestro navegador podriamos escribir las rutas y ver los cambios reflejados en nuestra base de datos.</p>
-<p>Si quisieramos tambien correr localmente nuestro frontend, desde Visual abrimos una terminal y escribimos:</p>
+<p>Nuestra API estará disponible en el puerto especificado en el proyecto. De esta manera, desde nuestro navegador podemos escribir las rutas para ver los cambios reflejados en nuestra base de datos.</p>
+<p>Si quisieramos tambien correr localmente nuestro frontend, desde Visual debemos abrir un terminal y escribir:</p>
 <p><b>ng start</b></p>
-<p>En el puerto especificado estara disponible nuestro front para ser testeado (recordar cambiar en las peticiones del app.component.ts que le vamos a pegar al localhost!!!).</p>
+<p>Así, en el puerto especificado, estará disponible nuestro front para ser testeado (recuerden cambiar app.component.ts para pegarle a localhost en las peticiones!!!).</p>
 <hr>
