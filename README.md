@@ -64,17 +64,17 @@ Es importante que creen un repositorio para el BACKEND y otro para el FRONTEND (
 <img src="images/1.atlas/16.jpg">
 <h3>➤ 3. Instalar dependencias y conocer la estructura del BACKEND.</h3>
 <p>Es importante que instalen NodeJS: https://nodejs.org/es/download/
-Lo primero que tenemos que hacer es abrir esta carpeta con el Visual Studio Code.
-Luego abriremos una nueva terminal.</p>
+  Lo primero que tenemos que hacer es abrir esta carpeta con el Visual Studio Code.
+  Luego abriremos una nueva terminal.</p>
 <img src="images/2.backyfront/1.jpg">
 <p>Ahora vamos a instalar las dependencias de este proyecto, para eso escribiremos:
-<b>npm install</b>
-La estructura del BACKEND deberia verse asi:</p>
+  <b>npm install</b>
+  La estructura del BACKEND deberia verse asi:</p>
 <img src="images/2.backyfront/2.jpg">
 <p>Las carpetas y archivos que mas nos interesan son:</p>
 <img src="images/2.backyfront/3.jpg">
 <p>config/db.config.js (Configuracion de string de conexion a Atlas)
-controllers/perrito.controller.js (Donde escribiremos todas las funciones que tienen consultas a MongoDB)
-routes/perrito.js (Configuracion de las peticiones y a que funciones de controller llamaran)
-app.js (La API en si, lo unico que se toca y configuran son las rutas)
-Cada archivo esta comentado para que se comprenda la manera en la que se estructura la API, en nuestro caso, una api para una veterinaria que necesita hacer consultas sobre perritos.</p>
+  controllers/perrito.controller.js (Donde escribiremos todas las funciones que tienen consultas a MongoDB)
+  routes/perrito.js (Configuracion de las peticiones y a que funciones de controller llamaran)
+  app.js (La API en si, lo unico que se toca y configuran son las rutas)
+  Cada archivo esta comentado para que se comprenda la manera en la que se estructura la API, en nuestro caso, una api para una veterinaria que necesita hacer consultas sobre perritos.</p>
