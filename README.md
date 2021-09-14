@@ -82,13 +82,13 @@ Es importante que creen un repositorio para el BACKEND y otro para el FRONTEND (
 <p>• Este frontend esta hecho en Angular, por lo tanto, lo ideal es instalarlo: https://angular.io/</p>
 <p>• Abrimos esta carpeta con Visual Studio Code. Instalamos las dependencias como lo hicimos antes, abriendo una terminal y escribiendo:</p>
 <p><b>npm install</b></p>
-<p>• La estructura del BACKEND debería verse asi:</p>
+<p>• La estructura del FRONTEND debería verse asi:</p>
 <img src="images/2.backyfront/4.jpg">
 <p>• Las carpetas y archivos que mas nos interesan son:</p>
 <img src="images/2.backyfront/5.jpg">
 <p><b>src/app/services/data.service.ts</b> (Este es un servicio exclusivamente creado para realizar peticiones HTTP, nuestra api usa GET, POST, PUT y DELETE).</p>
-<p><b>src/app/app.component.html (Un HTML con botonitos que realizan las consultas al tocarlos).</b></p>
-<p><b>src/app/app.component.ts (Aqui estara la logica necesaria para mostrar en pantalla las opciones que queramos y la funcion que realizara la peticion a nuestro BACKEND).</b></p>
+<p><b>src/app/app.component.html</b> (Un HTML con botonitos que realizan las consultas al tocarlos).</p>
+<p><b>src/app/app.component.ts</b> (Aqui estara la logica necesaria para mostrar en pantalla las opciones que queramos y la funcion que realizara la peticion a nuestro BACKEND).</p>
 <p>• Aca tambien esta todo comentado para que se entienda cada cosa y como es que podemos hacer peticiones desde un FRONT a un BACK.</p>
 <h3>➤ 5. Subir BACKEND y FRONTEND a Heroku.</h3>
 <p>• Les dejaremos este repositorio donde se explica en el paso 3 cómo subir una aplicacion a heroku, deberan hacer esto tanto para el front como para el back: https://github.com/flippiJS/nodejs-mongodb-heroku</p>
